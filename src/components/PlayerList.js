@@ -4,9 +4,9 @@ import Player from './Player';
 function PlayerList() {
   return (
     <section className="PlayerList">
-      <hi>
+      <h1>
         Current participating players
-      </hi>
+      </h1>
       <Player />
     </section>
   );
