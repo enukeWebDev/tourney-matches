@@ -9,13 +9,14 @@ function PlayerList(props) {
   //console.log(playerDataArray);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
   //console.log(parsedPlayerData);
-
+  const onePlayer = parsedPlayerData[0];
+  //console.log(onePlayer);
   return (
     <section className="PlayerList">
       <h1>
         Current participating players
       </h1>
-      <Player />
+      <Player {...onePlayer} />
     </section>
   );
 };
