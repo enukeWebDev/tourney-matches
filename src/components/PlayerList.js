@@ -7,11 +7,8 @@ import { preparePlayerData, addWinsToPlayers } from '../helpers/playerHelpers';
 
 function PlayerList(props) {
   const playerDataArray = preparePlayerData(playerData);
-  //console.log(playerDataArray);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-  //console.log(parsedPlayerData);
   const parsedPlayers = parsedPlayerData.map(player => <Player key={player.gamerTag} {...player} />);
-  //console.log(parsedPlayers);
 
   return (
     <section className="PlayerList">
