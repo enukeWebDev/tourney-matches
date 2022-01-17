@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 const matchData = [
 
@@ -40,8 +40,9 @@ const matchData = [
     matchNumber: 6,
     players: ["Henrikarex", "H3nr1k4"],
     winner: undefined,
-    scoreD
-    
+    scoreDifference: undefined
+  }
+
 ]
 
 
